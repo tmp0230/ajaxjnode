@@ -1,0 +1,31 @@
+资源文件:
+	
+
+******** bootstrap admin and css resource *******
+
+http://demo.onokumus.com/metis/index.html
+http://responsivewebinc.com/bootstrap-themes/free-bootstrap-themes.html
+http://responsivewebinc.com/canisha/
+http://responsivewebinc.com/premium/penny/
+http://responsivewebinc.com/premium/colorsy/frontend/
+
+********** ember.js 资源 **********
+http://emberjs.torriacg.org/
+中文
+http://emberjs.torriacg.org/documentation/
+ember-data.rc
+http://builds.emberjs.com/tags/v1.0.0-beta.3/ember-data.js
+好多例子
+http://todomvc.com/
+
+
+************ 测试部分 ********
+//BDD 测试
+http://visionmedia.github.io/mocha/
+
+https://github.com/mhevery/jasmine-node
+
+//断言
+https://github.com/visionmedia/should.js
+http://chaijs.com 
+chai
