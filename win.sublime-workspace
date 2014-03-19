@@ -519,6 +519,22 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "test/test1.js",
+			"settings":
+			{
+				"buffer_size": 288,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "test/test2.js",
+			"settings":
+			{
+				"buffer_size": 148,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -548,6 +564,14 @@
 	},
 	"file_history":
 	[
+		"/D/projects/github/ajaxj/ajaxjnode/.gitignore",
+		"/D/projects/github/ajaxj/ajaxjnode/package.json",
+		"/D/projects/github/ajaxj/ajaxjnode/test/test1.js",
+		"/D/projects/github/ajaxj/ajaxjnode/test/test2.js",
+		"/D/projects/github/ajaxj/ajaxjnode/projects/res.txt",
+		"/D/projects/github/ajaxj/ajaxjnode/app/readme.txt",
+		"/D/projects/github/ajaxj/ajaxjnode/test/readme.txt",
+		"/D/projects/github/ajaxj/ajaxjnode/projects/readme.txt",
 		"/D/projects/projectlocker/myrobit/mitiyu/data.sql",
 		"/D/projects/projectlocker/myrobit/mitiyu/fetch8bomatch.py",
 		"/D/projects/projectlocker/myrobit/mitiyu/mitiyu.log",
@@ -667,15 +691,7 @@
 		"/D/projects/csdn/mydemo/app2/code/code.txt",
 		"/D/projects/csdn/mydemo/app2/public/css/jqm-demo.css",
 		"/D/projects/csdn/mydemo/app2/views/jqmdemo/index.html",
-		"/D/projects/csdn/mydemo/app2/public/js/jqmdemo_index.js",
-		"/D/projects/csdn/mydemo/app2/views/index.html",
-		"/D/projects/csdn/mydemo/README.md",
-		"/D/projects/csdn/mydemo/app2/routes/index.js",
-		"/D/projects/csdn/mydemo/app_angular/routes/index.js",
-		"/D/projects/csdn/mydemo/app_angular/views/matchs.html",
-		"/D/projects/csdn/mydemo/app_angular/public/app/match_app.js",
-		"/D/projects/csdn/mydemo/app_angular/public/app/match_controllers.js",
-		"/D/projects/csdn/mydemo/app_angular/public/app/match_services.js"
+		"/D/projects/csdn/mydemo/app2/public/js/jqmdemo_index.js"
 	],
 	"find":
 	{
@@ -821,8 +837,61 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "test/test1.js",
+					"settings":
+					{
+						"buffer_size": 288,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								138,
+								138
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "test/test2.js",
+					"settings":
+					{
+						"buffer_size": 148,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								148,
+								148
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],

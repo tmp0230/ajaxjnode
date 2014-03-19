@@ -23,6 +23,10 @@ http://todomvc.com/
 //BDD 测试
 http://visionmedia.github.io/mocha/
 
+//镜象安装
+npm --registry http://registry.cnpmjs.org install -g mocha
+
+
 https://github.com/mhevery/jasmine-node
 
 //断言
