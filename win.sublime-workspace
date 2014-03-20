@@ -4,132 +4,60 @@
 		"selected_items":
 		[
 			[
-				"_t",
-				"_temperature"
-			],
-			[
-				"_a",
-				"_arank"
-			],
-			[
-				"te",
-				"temperature"
-			],
-			[
-				"w",
-				"weather"
-			],
-			[
-				"_h",
-				"_hrank"
-			],
-			[
-				"jso",
-				"json_txt"
-			],
-			[
-				"_st",
-				"_stSecond"
-			],
-			[
-				"save",
-				"savematch"
-			],
-			[
-				"stat",
-				"_status"
-			],
-			[
-				"countrie",
-				"countries_datas"
-			],
-			[
-				"le",
-				"leagues"
-			],
-			[
-				"co",
-				"countries"
-			],
-			[
-				"_v",
-				"_visitingmatchlogo"
-			],
-			[
-				"_",
-				"_city"
-			],
-			[
-				"_H",
-				"_head_txt"
-			],
-			[
-				"read",
-				"readToHtml"
-			],
-			[
-				"_cate",
-				"_cateen"
-			],
-			[
-				"time",
-				"time"
-			],
-			[
-				"up",
-				"update_detail"
-			],
-			[
-				"mv",
-				"mvlist"
-			],
-			[
-				"cate",
-				"cateen"
-			],
-			[
-				"_lo",
-				"_location"
+				"requ",
+				"request"
 			],
 			[
 				"find",
 				"findAll"
 			],
 			[
-				"url",
-				"urllib2"
-			],
-			[
-				"_c",
-				"_created"
-			],
-			[
-				"get",
-				"get_list_fromdb"
-			],
-			[
-				"art",
-				"articles_tmp"
-			],
-			[
-				"haku",
-				"hakuzy_mv"
-			],
-			[
-				"in",
-				"insert_listdata"
+				"cate",
+				"cateen"
 			],
 			[
 				"list",
-				"listdata"
+				"li_list"
+			],
+			[
+				"_c",
+				"_created_arr"
+			],
+			[
+				"e",
+				"encode"
+			],
+			[
+				"save",
+				"saveteam"
+			],
+			[
+				"le",
+				"league_datas"
+			],
+			[
+				"lo",
+				"logger"
+			],
+			[
+				"con",
+				"config"
+			],
+			[
+				"time",
+				"timedelta"
+			],
+			[
+				"re",
+				"readUrlToHtml"
+			],
+			[
+				"ex",
+				"exit"
 			],
 			[
 				"_t1",
 				"_t1en"
-			],
-			[
-				"con",
-				"content"
 			],
 			[
 				"cont",
@@ -146,6 +74,10 @@
 			[
 				"t_007",
 				"t_007_team"
+			],
+			[
+				"_t",
+				"_t1tw"
 			],
 			[
 				"cu",
@@ -172,12 +104,12 @@
 				"t_007_team"
 			],
 			[
-				"ex",
-				"execute"
-			],
-			[
 				"ur",
 				"urllib2"
+			],
+			[
+				"url",
+				"urlgal"
 			],
 			[
 				"lea",
@@ -216,6 +148,10 @@
 				"team_arr2"
 			],
 			[
+				"te",
+				"team_arr2"
+			],
+			[
 				"ul",
 				"urlopen"
 			],
@@ -230,6 +166,10 @@
 			[
 				"de",
 				"decode"
+			],
+			[
+				"co",
+				"country"
 			],
 			[
 				"cou",
@@ -260,16 +200,16 @@
 				"fetchurl"
 			],
 			[
-				"re",
-				"render_to_response"
-			],
-			[
 				"for",
 				"forms"
 			],
 			[
 				"Ht",
 				"HttpResponse"
+			],
+			[
+				"jso",
+				"json_obj"
 			],
 			[
 				"_l",
@@ -388,11 +328,11 @@
 				"eventinfo"
 			],
 			[
-				"ev",
-				"eventinfo"
+				"_st",
+				"_status"
 			],
 			[
-				"e",
+				"ev",
 				"eventinfo"
 			],
 			[
@@ -436,12 +376,12 @@
 				"status"
 			],
 			[
-				"_s",
-				"_status"
+				"_h",
+				"_hits"
 			],
 			[
-				"lo",
-				"location"
+				"_s",
+				"_status"
 			],
 			[
 				"crea",
@@ -488,6 +428,10 @@
 				"teams"
 			],
 			[
+				"get",
+				"getteambyid"
+			],
+			[
 				"add",
 				"addcard"
 			],
@@ -514,24 +458,96 @@
 			[
 				"_ply",
 				"_player4"
+			],
+			[
+				"ply",
+				"player4"
+			],
+			[
+				"_",
+				"_p3"
+			],
+			[
+				"pl",
+				"player1"
+			],
+			[
+				"log",
+				"logined"
+			],
+			[
+				"curs",
+				"courselist"
+			],
+			[
+				"se",
+				"session"
+			],
+			[
+				"cour",
+				"courselist"
+			],
+			[
+				"in",
+				"input	Tag"
+			],
+			[
+				"zhibo",
+				"zhibodetail"
+			],
+			[
+				"c",
+				"courseid"
+			],
+			[
+				"mpar",
+				"mpar_"
+			],
+			[
+				"Mat",
+				"MatchDetail"
+			],
+			[
+				"matc",
+				"match1"
+			],
+			[
+				"pa",
+				"par3"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "test/test1.js",
+			"file": "projects/README.txt",
 			"settings":
 			{
-				"buffer_size": 288,
+				"buffer_size": 5,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "test/test2.js",
+			"file": ".gitignore",
 			"settings":
 			{
-				"buffer_size": 148,
+				"buffer_size": 40,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 204,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "test/test1.js",
+			"settings":
+			{
+				"buffer_size": 288,
 				"line_ending": "Windows"
 			}
 		}
@@ -551,7 +567,10 @@
 	},
 	"console":
 	{
-		"height": 125.0
+		"height": 125.0,
+		"history":
+		[
+		]
 	},
 	"distraction_free":
 	{
@@ -564,58 +583,29 @@
 	},
 	"file_history":
 	[
-		"/D/projects/github/ajaxj/ajaxjnode/.gitignore",
+		"/D/projects/github/ajaxj/ajaxjnode/express_examples/hello-world/index.js",
+		"/D/projects/github/ajaxj/ajaxjnode/test/readmt.txt",
+		"/D/projects/github/ajaxj/ajaxjnode/test/test.js",
 		"/D/projects/github/ajaxj/ajaxjnode/package.json",
-		"/D/projects/github/ajaxj/ajaxjnode/test/test1.js",
-		"/D/projects/github/ajaxj/ajaxjnode/test/test2.js",
-		"/D/projects/github/ajaxj/ajaxjnode/projects/res.txt",
-		"/D/projects/github/ajaxj/ajaxjnode/app/readme.txt",
-		"/D/projects/github/ajaxj/ajaxjnode/test/readme.txt",
-		"/D/projects/github/ajaxj/ajaxjnode/projects/readme.txt",
-		"/D/projects/projectlocker/myrobit/mitiyu/data.sql",
-		"/D/projects/projectlocker/myrobit/mitiyu/fetch8bomatch.py",
-		"/D/projects/projectlocker/myrobit/mitiyu/mitiyu.log",
-		"/D/projects/projectlocker/myrobit/mitiyu/fetch8bobs.py",
-		"/D/projects/projectlocker/myrobit/mitiyu/config.py",
-		"/D/projects/projectlocker/myrobit/mitiyu/fetch8bobsmatch.py",
-		"/D/projects/projectlocker/myrobit/mitiyu/README.txt",
-		"/D/projects/page_create/hengda/lnpk.py",
-		"/D/projects/projectlocker/myrobit/mitiyu/fetch8bo.py",
-		"/D/projects/projectlocker/myrobit/3tv3/guobianyu.py",
+		"/D/projects/github/ajaxj/ajaxjnode/app/package.json",
+		"/D/projects/projectlocker/myrobit/mitiyu/8bonews.py",
+		"/D/projects/mitiyu/足球比分,即时比分,篮球比分,8bo体育社区_.htm",
 		"/D/projects/projectlocker/myrobit/3tv3/README.txt",
-		"/D/projects/page_create/hengda/hengdafc.py",
-		"/D/projects/projectlocker/myrobit/3tv3/guobianyutv.py",
-		"/D/projects/projectlocker/myrobit/3tv3/3tv3.log",
 		"/D/projects/projectlocker/myrobit/3tv3/hakuzy.py",
-		"/D/scala-SDK-3.0.2/eclipse/workspace/go2014/src/webapp/routers/router.go",
-		"/D/scala-SDK-3.0.2/eclipse/workspace/go2014/src/webapp/main.go",
-		"/D/scala-SDK-3.0.2/eclipse/workspace/go2014/src/webapp/controllers/admin.go",
-		"/D/scala-SDK-3.0.2/eclipse/workspace/go2014/src/webapp/controllers/test.go",
-		"/D/projects/projectlocker/myrobit/mitiyu/boqiuba.py",
-		"/D/scala-SDK-3.0.2/eclipse/workspace/scala2014/build.sbt",
-		"/D/scala-SDK-3.0.2/eclipse/workspace/scala2014/project/plugins.sbt",
-		"/D/scala-SDK-3.0.2/eclipse/workspace/scala2014/.gitignore",
-		"/D/projects/java/scala-codes/n8han-dispatch-twine-5c9960c/n8han-dispatch-twine-5c9960c/src/main/scala/twine/Twine.scala",
-		"/D/projects/projectlocker/myrobit/mitiyu/logging.conf",
 		"/D/projects/projectlocker/myrobit/mitiyu/zuqiu168.py",
-		"/D/projects/projectlocker/myrobit/app/mitiyu/fetcher.py",
-		"/D/projects/projectlocker/myrobit/app/food/fetcher.py",
-		"/D/projects/projectlocker/myrobit/mitiyu/3tv3.log",
+		"/D/projects/projectlocker/myrobit/mitiyu/boqiuba.py",
+		"/D/projects/projectlocker/myrobit/3tv3/guobianyu.py",
+		"/D/projects/projectlocker/myrobit/3tv3/3tv3.log",
+		"/D/projects/projectlocker/myrobit/mitiyu/fetch8bo.py",
 		"/D/projects/projectlocker/myrobit/app/mitiyu/fetch8bo.py",
-		"/D/projects/projectlocker/myrobit/app/mitiyu/fetchgal.py",
-		"/D/projects/projectlocker/myrobit/app/mitiyu/fetch007.py",
-		"/D/projects/projectlocker/myrobit/3tv3/logging.conf",
-		"/D/projects/projectlocker/myrobit/3tv3/config.py",
-		"/D/projects/projectlocker/myrobit/app/food/config.py",
-		"/D/projects/projectlocker/myrobit/app/food/logging.conf",
-		"/D/projects/projectlocker/myrobit/readme",
-		"/D/projects/projectlocker/myrobit/app/mitiyu/readme.txt",
-		"/D/projects/projectlocker/myrobit/bangchu8/README.txt",
-		"/D/projects/idea/ajaxjlv/trunk/demo/b/mvlauncher.py",
+		"/D/projects/projectlocker/myrobit/mitiyu/mitiyu.log",
 		"/D/projects/projectlocker/myrobit/app/mitiyu/fetchbfjs.py",
 		"/D/projects/projectlocker/myrobit/app/mitiyu/savebfjs.py",
 		"/D/projects/projectlocker/myrobit/app/mitiyu/db.sqlite3.sql",
 		"/D/projects/projectlocker/myrobit/app/mitiyu/fetchjs.py",
+		"/D/projects/projectlocker/myrobit/app/mitiyu/fetchgal.py",
+		"/D/projects/projectlocker/myrobit/app/mitiyu/fetch007.py",
+		"/D/projects/projectlocker/myrobit/app/mitiyu/fetcher.py",
 		"/D/projects/projectlocker/myrobit/app/mitiyu/database.py",
 		"/D/projects/projectlocker/myrobit/app/mitiyu/launcher.py",
 		"/D/projects/projectlocker/myrobit/foodweb/demo/models.py",
@@ -691,7 +681,36 @@
 		"/D/projects/csdn/mydemo/app2/code/code.txt",
 		"/D/projects/csdn/mydemo/app2/public/css/jqm-demo.css",
 		"/D/projects/csdn/mydemo/app2/views/jqmdemo/index.html",
-		"/D/projects/csdn/mydemo/app2/public/js/jqmdemo_index.js"
+		"/D/projects/csdn/mydemo/app2/public/js/jqmdemo_index.js",
+		"/D/projects/csdn/mydemo/app2/views/index.html",
+		"/D/projects/csdn/mydemo/README.md",
+		"/D/projects/csdn/mydemo/app2/routes/index.js",
+		"/D/projects/csdn/mydemo/app_angular/routes/index.js",
+		"/D/projects/csdn/mydemo/app_angular/views/matchs.html",
+		"/D/projects/csdn/mydemo/app_angular/public/app/match_app.js",
+		"/D/projects/csdn/mydemo/app_angular/public/app/match_controllers.js",
+		"/D/projects/csdn/mydemo/app_angular/public/app/match_services.js",
+		"/D/projects/csdn/mydemo/app_angular/public/matchs/match-list.html",
+		"/D/projects/csdn/mydemo/app_angular/readme.txt",
+		"/D/projects/csdn/mydemo/app_angular/views/phones.html",
+		"/D/projects/csdn/mydemo/app_angular/views/matchs/match-list.html",
+		"/D/projects/csdn/mydemo/app_angular/public/app/app.js",
+		"/D/projects/csdn/mydemo/app_angular/views/index.html",
+		"/D/projects/csdn/mydemo/app_angular/public/partials/phone-list.html",
+		"/D/projects/csdn/mydemo/app_angular/public/app/controllers.js",
+		"/D/projects/csdn/mydemo/app2/public/js/index.js",
+		"/D/projects/csdn/mydemo/app_angular/views/test/test.html",
+		"/D/projects/csdn/mydemo/app_angular/public/app/test.js",
+		"/D/projects/csdn/mydemo/app2/app.js",
+		"/D/projects/csdn/mydemo/app_node/app.js",
+		"/D/projects/csdn/mydemo/app_node/routes/index.js",
+		"/D/projects/csdn/mydemo/app2/package.json",
+		"/D/projects/csdn/mydemo/app/gruntfile.js",
+		"/D/projects/csdn/mydemo/app2/gruntfile.js",
+		"/D/projects/csdn/mydemo/app_coffee/lib/test.js",
+		"/D/projects/csdn/mydemo/app/readme.txt",
+		"/D/projects/csdn/mydemo/app/assets/js/input1.js",
+		"/D/projects/csdn/mydemo/app/assets/js/input2.js"
 	],
 	"find":
 	{
@@ -710,8 +729,6 @@
 		"case_sensitive": true,
 		"find_history":
 		[
-			"print",
-			"\"",
 			"895",
 			"15942",
 			"crt",
@@ -823,7 +840,6 @@
 		"regex": false,
 		"replace_history":
 		[
-			"\\\"",
 			"cat",
 			"name",
 			"Cat"
@@ -837,12 +853,99 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
+					"file": "projects/README.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 60.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": ".gitignore",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 40,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 204,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"file": "test/test1.js",
+					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 288,
@@ -852,8 +955,8 @@
 						"selection":
 						[
 							[
-								138,
-								138
+								0,
+								0
 							]
 						],
 						"settings":
@@ -864,32 +967,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "test/test2.js",
-					"settings":
-					{
-						"buffer_size": 148,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								148,
-								148
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -930,6 +1008,11 @@
 	{
 		"height": 100.0
 	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "win.sublime-project",
 	"replace":
 	{
 		"height": 62.0
@@ -942,7 +1025,7 @@
 		[
 			[
 				"",
-				"golfweb/golf/views/admin.py"
+				"app\\food\\foodmain.py"
 			],
 			[
 				"o",
@@ -963,10 +1046,24 @@
 		],
 		"width": 380.0
 	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 196.0,
-	"status_bar_visible": true
+	"side_bar_width": 215.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
 }
