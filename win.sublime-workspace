@@ -520,18 +520,35 @@
 	"buffers":
 	[
 		{
-			"file": "test/test1.js",
+			"file": "app/app.js",
 			"settings":
 			{
-				"buffer_size": 288,
+				"buffer_size": 430,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "test/test2.js",
+			"file": "app/routes/index.js",
 			"settings":
 			{
-				"buffer_size": 148,
+				"buffer_size": 57,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/config.js",
+			"settings":
+			{
+				"buffer_size": 89,
+				"line_ending": "Windows",
+				"name": "config"
+			}
+		},
+		{
+			"file": "app/test-config.js",
+			"settings":
+			{
+				"buffer_size": 54,
 				"line_ending": "Windows"
 			}
 		}
@@ -564,13 +581,13 @@
 	},
 	"file_history":
 	[
-		"/D/projects/github/ajaxj/ajaxjnode/.gitignore",
+		"/D/projects/github/ajaxj/ajaxjnode/test/readme.txt",
 		"/D/projects/github/ajaxj/ajaxjnode/package.json",
-		"/D/projects/github/ajaxj/ajaxjnode/test/test1.js",
 		"/D/projects/github/ajaxj/ajaxjnode/test/test2.js",
+		"/D/projects/github/ajaxj/ajaxjnode/test/test1.js",
+		"/D/projects/github/ajaxj/ajaxjnode/.gitignore",
 		"/D/projects/github/ajaxj/ajaxjnode/projects/res.txt",
 		"/D/projects/github/ajaxj/ajaxjnode/app/readme.txt",
-		"/D/projects/github/ajaxj/ajaxjnode/test/readme.txt",
 		"/D/projects/github/ajaxj/ajaxjnode/projects/readme.txt",
 		"/D/projects/projectlocker/myrobit/mitiyu/data.sql",
 		"/D/projects/projectlocker/myrobit/mitiyu/fetch8bomatch.py",
@@ -842,18 +859,44 @@
 			[
 				{
 					"buffer": 0,
-					"file": "test/test1.js",
+					"file": "app/app.js",
 					"settings":
 					{
-						"buffer_size": 288,
+						"buffer_size": 430,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								138,
-								138
+								430,
+								430
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 135.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/routes/index.js",
+					"settings":
+					{
+						"buffer_size": 57,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								54,
+								54
 							]
 						],
 						"settings":
@@ -867,19 +910,46 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "test/test2.js",
+					"buffer": 2,
+					"file": "app/config.js",
 					"settings":
 					{
-						"buffer_size": 148,
+						"buffer_size": 89,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								148,
-								148
+								89,
+								89
+							]
+						],
+						"settings":
+						{
+							"auto_name": "config",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/test-config.js",
+					"settings":
+					{
+						"buffer_size": 54,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								48,
+								48
 							]
 						],
 						"settings":
