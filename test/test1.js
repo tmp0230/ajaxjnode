@@ -1,6 +1,20 @@
+// var assert = require("assert");
+var config = require("../test-config");
+var app = require("../app");
+// var should = require("should");
+
+
+var TEST_PORT = Math.floor(Math.random() * 61439 + 4096);
+var base_url = "http://localhost:" + TEST_PORT + "/";
+var test_email = "test@test.com";
+
+
+
 //在所有的测试里只运行一次
 before(function(){		
-	console.log('before');
+	var server = app.init(config);
+	server.listen(TEST_PORT);
+	console.log("Server is Port %s",TEST_PORT);
 });
 
 //一个it 运行一次

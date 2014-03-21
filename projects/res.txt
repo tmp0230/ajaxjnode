@@ -33,3 +33,11 @@ https://github.com/mhevery/jasmine-node
 https://github.com/visionmedia/should.js
 http://chaijs.com 
 chai
+
+
+Sinon.JS监测以及制造mock数据
+http://sinonjs.org/
+
+
+Zombie.js做基于浏览器的轻量级集成测试。
+http://zombie.labnotes.org/

@@ -11,6 +11,8 @@
     "everyauth":"*",
     "ejs": "*",
     "should": "*",
-    "supertest":"*"
+    "supertest":"*",
+    "sinon":"*",
+    "zombie":"*"
   }
 }
