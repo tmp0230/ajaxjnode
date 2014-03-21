@@ -3,3 +3,5 @@
 .idea/*
 *.db
 node_modules/*
+win.sublime-project
+win.sublime-workspace
