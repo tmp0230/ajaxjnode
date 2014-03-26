@@ -11,7 +11,7 @@ var UserModel = models.User;
  * @param {Function} callback 回调 function (err, user) 
  */
 exports.getUserById = function(id,callback){
-	User.findOne({_id:id},callback);
+	UserModel.findOne({_id:id},callback);
 };
 
 
@@ -24,7 +24,7 @@ exports.getUserById = function(id,callback){
  * @param {Function} callback 回调 function (err, user) 
  */
 exports.getUserByName = function(name,callback){
-	User.findOne({name:name},callback);
+	UserModel.findOne({name:name},callback);
 };
 
 /**
@@ -36,7 +36,7 @@ exports.getUserByName = function(name,callback){
  * @param {Function} callback 回调 function (err, user) 
  */
 exports.getUserByMail = function(email,callback){
-	User.findOne({email:email},callback);
+	UserModel.findOne({email:email},callback);
 };
 
 
