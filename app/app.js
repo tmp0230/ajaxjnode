@@ -1,10 +1,18 @@
 var express = require("express");
 var mongoose = require("mongoose");
-var routes = require('./routes');
+var routes = require('./routes');				//前台
+var admin = require('./routes/admin');			//后台控制器
+var middleware = require('./middleware');		//中间件
+var mongoose = require("mongoose");
 
-//app.init(config)		//也可以用于测试
+
+//app.init(config)		//也可以用于测试能更好的引用别的配置文件,返回的是 已经配置好app对象
 var init = exports.init = function(config){
-	//TODO A
+	
+	//初始就连接数据库
+	var db_uri = config.default_db_uri;
+	mongoose.connect(db_uri);
+
 	var app = express();
 
 	app.configure(function(){
@@ -20,7 +28,13 @@ var init = exports.init = function(config){
 		app.use(app.router);
 	});
 
+
+	//routes 部分
+	//app.get('/auth',middleware.require_auth_browser,routes)
 	app.get('/', routes.index);
+
+	//admin routes 部分
+	app.get('/admin',middleware.require_auth_browser,admin.index);	//中间件加入用于验证
 
 	return app;
 }

@@ -1,6 +1,6 @@
 // var assert = require("assert");
-var config = require("../test-config");
-var app = require("../app");
+var config = require("../app/test-config");
+var app = require("../app/app");
 // var should = require("should");
 
 
@@ -26,7 +26,7 @@ beforeEach(function(){
 describe('Test1',function(){
 	describe("#Foo()",function(){
 		it('should foo1',function(){
-
+			
 		});
 
 		it('should foo2',function(){
