@@ -4,3 +4,4 @@ exports.User = require("./user");
 exports.Cook = require("./cook");
 exports.Category = require("./category");
 exports.Topic = require("./topic");
+exports.Tag = require("./tag");

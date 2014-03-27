@@ -17,8 +17,10 @@ require("./topic")
 require("./user");
 require("./category");
 require("./cook");
+require("./tag");
 
 exports.Topic = mongoose.model("Topic");
 exports.User = mongoose.model("User");
 exports.Category = mongoose.model("Category");
 exports.Cook = mongoose.model("Cook");
+exports.Tag = mongoose.model("Tag");
