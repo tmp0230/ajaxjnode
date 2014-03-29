@@ -5,6 +5,14 @@
 var models = require("../models");
 var CategoryModel = models.Category;
 
+
+
+exports.getAllCategories = function(callback){
+	var options = null;
+	CategoryModel.find({},null,null,callback);
+};
+
+
 /**
  * 通过ID查找分类
  * Callback:

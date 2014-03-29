@@ -1,11 +1,55 @@
 //后台
 var CookProxy = require("../proxy").Cook;
-var CategoryProxy = require("../proxy").Category
+var CategoryProxy = require("../proxy").Category;
+var UserProxy = require("../proxy").User;
+var TagProxy = require("../proxy").Tag;
+var TopicProxy = require("../proxy").Topic;
 
 // admin 首页
 exports.index = function(req,res,next){
     res.render('admin/index',{layout:'admin/layout'});
 };
+
+//初始化数据库
+exports.initdb = function(req,res,next){
+    //user
+    UserProxy.newAndSave("name","loginname","pass","email",function(err){
+        if(err){
+            return next(err);
+        }
+    });
+
+    //Cook
+    CookProxy.newAndSave("title","content",function(err){
+        if(err){
+            return next(err);
+        }
+    });
+
+    //Category
+    CategoryProxy.newAndSave("name","cn_name",function(err){
+        if(err){
+            return next(err);
+        }
+    });
+
+    TagProxy.newAndSave("name","background",1,"description",function(err){
+        if(err){
+            return next(err);
+        }
+    });
+
+    TopicProxy.newAndSave("title","content",function(err){
+        if(err){
+            return next(err);
+        }
+    });
+
+    res.send("initdb");
+
+
+};
+
 
 //分类列表
 exports.categorylist = function(req,res,next){

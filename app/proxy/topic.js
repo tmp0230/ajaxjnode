@@ -4,6 +4,14 @@
 var models = require("../models");
 var TopicModel = models.Topic;
 
+
+
+exports.getAllTopics = function(callback){
+	var options = null;
+	TopicModel.find({},null,options,callback);
+};
+
+
 /**
  * 通过ID查找主题
  * Callback:

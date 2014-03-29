@@ -2,6 +2,10 @@ var express = require("express");
 var mongoose = require("mongoose");
 var routes = require('./routes');				//前台
 var admin = require('./routes/admin');			//后台控制器
+var admin_category = require("./routes/admin_category");
+var admin_cook = require("./routes/admin_cook");
+var admin_user = require("./routes/admin_user");
+var admin_topic = require("./routes/admin_topic");
 var admin_tag = require('./routes/admin_tag');
 var middleware = require('./middleware');		//中间件
 var mongoose = require("mongoose");
@@ -37,9 +41,32 @@ var init = exports.init = function(config){
 	//admin routes 部分
 	app.get('/admin',middleware.require_auth_browser,admin.index);	//中间件加入用于验证
 
-    app.get("/admin/categorylist/?",middleware.require_auth_browser,admin.categorylist);
-    app.get("/admin/addcategory/?",middleware.require_auth_browser,admin.addcategory);
-    app.post("/admin/savecategory/?",middleware.require_auth_browser,admin.savecategory);
+	app.get("/admin/initdb",admin.initdb);
+
+	//admin category
+	app.get("/admin/categorylist/?",middleware.require_auth_browser,admin_category.categorylist);
+
+	//admin cook
+	app.get("/admin/cooklist/?",middleware.require_auth_browser,admin_cook.cooklist);
+
+	//admin user
+	app.get("/admin/userlist/?",middleware.require_auth_browser,admin_user.userlist);
+
+	//admin topic
+	app.get("/admin/topiclist/?",middleware.require_auth_browser,admin_topic.topiclist);
+
+	//admin tag
+    app.get('/admin/taglist/?',middleware.require_auth_browser,admin_tag.taglist);
+
+    app.post("/admin/savetag/?",middleware.require_auth_browser,admin_tag.savetag);
+	
+	return app;
+
+
+
+    // app.get("/admin/categorylist/?",middleware.require_auth_browser,admin.categorylist);
+    // app.get("/admin/addcategory/?",middleware.require_auth_browser,admin.addcategory);
+    // app.post("/admin/savecategory/?",middleware.require_auth_browser,admin.savecategory);
 //    app.get('/admin/delcategory/?',middleware.require_auth_browser,admin.delcategory);
 //    app.get("/admin/editcategory/?",middleware.require_auth_browser,admin.editcategory);
 //    app.post("/admin/editcategory/?",middleware.require_auth_browser,admin.editcategory);
@@ -58,10 +85,7 @@ var init = exports.init = function(config){
 //    app.get("/admin/addcook/?",middleware.require_auth_browser,admin.addcook);
 //    app.post("/admin/savecook/?",middleware.require_auth_browser,admin.savecook);
 
-    //admin tag
-    app.get('/admin/tags',admin_tag.edit_tags);
-    app.post("/admin/addtag",admin_tag.add);
-	return app;
+    
 }
 
 
@@ -70,4 +94,4 @@ if(!module.parent){
 	var app = init(config);					//初始化配置,返回APP
 	app.listen(process.env.PORT || 3000);
   	console.info("Express server listening on port in %s mode", app.settings.env);
-}
+};

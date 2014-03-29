@@ -2,6 +2,13 @@
 var models = require("../models");
 var UserModel = models.User;
 
+
+exports.getAllUsers = function(callback){
+	var options = null;
+	UserModel.find({},null,options,callback);
+};
+
+
 /**
  * 通过ID查找用户
  * Callback:

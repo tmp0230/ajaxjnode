@@ -3,17 +3,17 @@
  */
 var TagProxy = require("../proxy").Tag;
 
-exports.edit_tags = function(req,res,next){
+exports.taglist = function(req,res,next){
     TagProxy.getAllTags(function(err,tags){
         if(err){
            return next(err);
         }
-         res.render('admin/tags',{layout:"admin/layout",tags:tags});
+         res.render('admin/taglist',{layout:"admin/layout",tags:tags});
     });
 
 };
 
-exports.add = function(req,res,next){
+exports.savetag = function(req,res,next){
     var name = req.body.name.trim();
     var description = req.body.description.trim();
     var background = req.body.background.trim();
