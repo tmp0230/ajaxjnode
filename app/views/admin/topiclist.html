@@ -1,0 +1,27 @@
+<h2 class="sub-header">主题列表<%- topics.length %></h2>
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Title</th>
+            <th>Content</th>
+            <th>create_at</th>
+            <th>update_at</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% topics.forEach(function(topic){%>
+        <tr>
+            <td><%- topic.id %></td>
+            <td><%- topic.title %></td>
+            <td><%- topic.content %></td>
+            <td><%- topic.create_at %></td>
+            <td><%- topic.update_at %></td>
+            <td>UPDATE | DEL</td>
+        </tr>
+        <% }) %>
+        </tbody>
+    </table>
+</div>
