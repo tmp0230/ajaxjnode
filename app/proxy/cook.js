@@ -17,7 +17,7 @@ exports.getCookByTitle = function(title,callback){
 
 exports.getAllCooks = function(callback){
 	var options = {sort:{create_at:-1}};
-	TagModel.find({},null,options,callback);
+	CookModel.find({},null,options,callback);
 }
 
 

@@ -3,7 +3,7 @@
  */
 var TagProxy = require("../proxy").Tag;
 
-exports.taglist = function(req,res,next){
+exports.list = function(req,res,next){
     TagProxy.getAllTags(function(err,tags){
         if(err){
            return next(err);
@@ -13,7 +13,24 @@ exports.taglist = function(req,res,next){
 
 };
 
-exports.savetag = function(req,res,next){
+
+exports.delete = function(req,res,next){
+    var tag_id = req.params.tid;
+    TagProxy.getTagById(tag_id,function(err,tag){
+        if(err){
+            return next(err);
+        }
+        tag.remove(function(err){
+            if(err){
+                return next(err);
+            }
+            res.redirect("/admin/tag/list");
+        });
+    });
+}
+
+
+exports.create = function(req,res,next){
     var name = req.body.name.trim();
     var description = req.body.description.trim();
     var background = req.body.background.trim();
@@ -23,6 +40,6 @@ exports.savetag = function(req,res,next){
         if(err){
             return next(err);
         }
-        res.redirect("/admin/tags")
+        res.redirect("/admin/tag/list")
     });
 }

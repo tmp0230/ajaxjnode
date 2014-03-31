@@ -1,4 +1,4 @@
-<h2 class="sub-header">COOK列表 <a href="/admin/addcook">添加cook</a></h2>
+<h2 class="sub-header">COOK列表 | (<%- cooks.length %>)</h2>
 <div class="table-responsive">
 <table class="table table-striped">
 <thead>
@@ -6,21 +6,46 @@
 <th>#</th>
 <th>Title</th>
 <th>Content</th>
+<th>create_at</th>
+<th>update_at</th>
 <th>操作</th>
 </tr>
 </thead>
 <tbody>
-<% cooklist.forEach(function(cook){ %> 
+<% cooks.forEach(function(cook){ %> 
 <tr>
 <td><%- cook.id %></td>
 <td><%- cook.title %></td>
-<td><%- cook.img %></td>
+<td><%- cook.content %></td>
+<td><%- cook.create_at %></td>
+<td><%- cook.update_at %></td>
 <td>
 <a href="/admin/editcook?id=<%-cook.id%>">EDIT</a>|
-<a href="/admin/delcook?id=<%-cook.id%>">DEL</a>
+<a href="/admin/cook/<%-cook.id%>/delete">DEL</a>
 </td>
 </tr>
 <% }) %>
 </tbody>
 </table>
+</div>
+
+<div class="table-responsive">
+    <form class="form-horizontal" role="form" method="post" action="/admin/cook/create">
+        <div class="form-group">
+            <label for="title" class="col-sm-1 control-label">title:</label>
+            <div class="col-sm-11">
+                <input type="text" class="form-control" id="title" name="title" placeholder="title">
+            </div>
+           
+            <label for="content" class="col-sm-1 control-label">content:</label>
+            <div class="col-sm-11">
+                <input type="text" class="form-control" id="content" name="content" placeholder="content">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">新增</button>
+            </div>
+        </div>
+    </form>
 </div>

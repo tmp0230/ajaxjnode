@@ -1,0 +1,63 @@
+<h2 class="sub-header">用户列表 | (<%- users.length %>)</h2>
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Loginname</th>
+            <th>pass</th>
+            <th>email</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% users.forEach(function(user){%>
+        <tr>
+            <td><%- user.id %></td>
+            <td><%- user.name %></td>
+            <td><%- user.loginname %></td>
+            <td><%- user.pass %></td>
+            <td><%- user.email %></td>
+            <td>
+                UPDATE| <a href="/admin/user/<%-user.id%>/delete">DEL</a>
+            </td>
+        </tr>
+        <% }) %>
+        </tbody>
+    </table>
+</div>
+
+
+
+<div class="table-responsive">
+    <form class="form-horizontal" role="form" method="post" action="/admin/user/create">
+        <div class="form-group">
+            <label for="name" class="col-sm-1 control-label">name:</label>
+            <div class="col-sm-11">
+                <input type="text" class="form-control" id="name" name="name" placeholder="name">
+            </div>
+           
+            <label for="loginname" class="col-sm-1 control-label">loginname:</label>
+            <div class="col-sm-11">
+                <input type="text" class="form-control" id="loginname" name="loginname" placeholder="loginname">
+            </div>
+
+            <label for="pass" class="col-sm-1 control-label">pass:</label>
+            <div class="col-sm-11">
+                <input type="text" class="form-control" id="pass" name="pass" placeholder="pass">
+            </div>
+
+            <label for="email" class="col-sm-1 control-label">email:</label>
+            <div class="col-sm-11">
+                <input type="text" class="form-control" id="email" name="email" placeholder="email">
+            </div>
+
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">新增</button>
+            </div>
+        </div>
+    </form>
+</div>

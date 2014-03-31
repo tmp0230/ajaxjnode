@@ -27,7 +27,7 @@ exports.initdb = function(req,res,next){
     });
 
     //Category
-    CategoryProxy.newAndSave("name","cn_name",function(err){
+    CategoryProxy.newAndSave("name","cnname",function(err){
         if(err){
             return next(err);
         }

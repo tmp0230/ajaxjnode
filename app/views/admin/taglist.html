@@ -1,4 +1,4 @@
-<h2 class="sub-header">添加标签<%- tags.length %></h2>
+<h2 class="sub-header">添加标签 | <%- tags.length %></h2>
 <div class="table-responsive">
     <table class="table table-striped">
         <thead>
@@ -16,7 +16,7 @@
             <td><%- tag.name %></td>
             <td><%- tag.create_at %></td>
             <td>
-
+                <a href="/admin/tag/<%-tag.id%>/delete">DEL</a>
             </td>
         </tr>
         <% }) %>
@@ -24,7 +24,7 @@
     </table>
 </div>
 <div class="table-responsive">
-    <form class="form-horizontal" role="form" method="post" action="/admin/savetag">
+    <form class="form-horizontal" role="form" method="post" action="/admin/tag/create">
         <div class="form-group">
             <label for="name" class="col-sm-1 control-label">名字:</label>
             <div class="col-sm-11">

@@ -37,6 +37,6 @@ exports.getCategoryById = function(id,callback){
 exports.newAndSave = function(name,cn,callback){
     var categoryEntity = new CategoryModel();
     categoryEntity.name = name;
-    categoryEntity.cn = name;
+    categoryEntity.cn = cn;
     categoryEntity.save(callback);
 }

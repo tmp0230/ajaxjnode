@@ -44,21 +44,30 @@ var init = exports.init = function(config){
 	app.get("/admin/initdb",admin.initdb);
 
 	//admin category
-	app.get("/admin/categorylist/?",middleware.require_auth_browser,admin_category.categorylist);
+	app.get("/admin/category/list/?",middleware.require_auth_browser,admin_category.list);
+	app.get("/admin/category/:cid/delete/?",middleware.require_auth_browser,admin_category.delete);
+	app.post("/admin/category/create?",middleware.require_auth_browser,admin_category.create);
 
 	//admin cook
-	app.get("/admin/cooklist/?",middleware.require_auth_browser,admin_cook.cooklist);
+	app.get("/admin/cook/list/?",middleware.require_auth_browser,admin_cook.list);
+	app.get("/admin/cook/:cid/delete/?",middleware.require_auth_browser,admin_cook.delete);
+	app.post("/admin/cook/create?",middleware.require_auth_browser,admin_cook.create);
 
 	//admin user
-	app.get("/admin/userlist/?",middleware.require_auth_browser,admin_user.userlist);
+	app.get("/admin/user/list/?",middleware.require_auth_browser,admin_user.list);
+	app.get("/admin/user/:uid/delete/?",middleware.require_auth_browser,admin_user.delete);
+	app.post("/admin/user/create?",middleware.require_auth_browser,admin_user.create);
+
 
 	//admin topic
-	app.get("/admin/topiclist/?",middleware.require_auth_browser,admin_topic.topiclist);
+	app.get("/admin/topic/list/?",middleware.require_auth_browser,admin_topic.list);
+	app.get("/admin/topic/:tid/delete/?",middleware.require_auth_browser,admin_topic.delete);
+	app.post("/admin/topic/create?",middleware.require_auth_browser,admin_topic.create);
 
 	//admin tag
-    app.get('/admin/taglist/?',middleware.require_auth_browser,admin_tag.taglist);
-
-    app.post("/admin/savetag/?",middleware.require_auth_browser,admin_tag.savetag);
+    app.get('/admin/tag/list/?',middleware.require_auth_browser,admin_tag.list);
+    app.get("/admin/tag/:tid/delete/?",middleware.require_auth_browser,admin_tag.delete);
+	app.post("/admin/tag/create?",middleware.require_auth_browser,admin_tag.create);
 	
 	return app;
 

@@ -1,4 +1,4 @@
-<h2 class="sub-header">主题列表<%- topics.length %></h2>
+<h2 class="sub-header">主题列表 | <%- topics.length %></h2>
 <div class="table-responsive">
     <table class="table table-striped">
         <thead>
@@ -19,9 +19,32 @@
             <td><%- topic.content %></td>
             <td><%- topic.create_at %></td>
             <td><%- topic.update_at %></td>
-            <td>UPDATE | DEL</td>
+            <td>UPDATE | <a href="/admin/topic/<%-topic.id%>/delete">DEL</a></td>
         </tr>
         <% }) %>
         </tbody>
     </table>
+</div>
+
+
+
+<div class="table-responsive">
+    <form class="form-horizontal" role="form" method="post" action="/admin/topic/create">
+        <div class="form-group">
+            <label for="title" class="col-sm-1 control-label">title:</label>
+            <div class="col-sm-11">
+                <input type="text" class="form-control" id="title" name="title" placeholder="title">
+            </div>
+           
+            <label for="content" class="col-sm-1 control-label">content:</label>
+            <div class="col-sm-11">
+                <input type="text" class="form-control" id="content" name="content" placeholder="content">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">新增</button>
+            </div>
+        </div>
+    </form>
 </div>

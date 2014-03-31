@@ -13,6 +13,9 @@
     "should": "*",
     "supertest":"*",
     "sinon":"*",
-    "zombie":"*"
+    "zombie":"*",
+    "validator":"*",
+    "nodemailer":"*",
+    "marked-prettyprint":"*"
   }
 }
