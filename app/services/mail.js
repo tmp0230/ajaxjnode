@@ -27,7 +27,7 @@ var util = require('util');
 exports.sendActiveMail = function(to,token,name){
 
 	var transport = mailer.createTransport("SMTP", {
-        service: 'Gmail', // use well known service.
+        //service: 'Gmail', // use well known service.
                             // If you are using @gmail.com address, then you don't
                             // even have to define the service name
         auth: {
