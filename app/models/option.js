@@ -6,7 +6,8 @@ var Schema = mongoose.Schema;
 var ObjectId = Schema.ObjectId;
 
 var OptionSchema = new Schema({
-	name:{type:String},	//配置名称
+	name:{type:String},	//配置名称英文
+	cn:{type:String},   //中文
 	value:{type:String}	//配置内容
 });
 

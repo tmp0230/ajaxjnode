@@ -7,6 +7,7 @@ var admin_cook = require("./routes/admin_cook");
 var admin_user = require("./routes/admin_user");
 var admin_topic = require("./routes/admin_topic");
 var admin_tag = require('./routes/admin_tag');
+var admin_option = require("./routes/admin_option");
 var middleware = require('./middleware');		//中间件
 var mongoose = require("mongoose");
 var partials = require('express-partials');
@@ -21,8 +22,9 @@ var init = exports.init = function(config){
 	var db_uri = config.default_db_uri;
 	mongoose.connect(db_uri);
 
-	myjob.job1();
-	myjob.job2();
+	//调用job
+	// myjob.job1();
+	// myjob.job2();
 
 	var app = express();
 
@@ -74,6 +76,10 @@ var init = exports.init = function(config){
     app.get('/admin/tag/list/?',middleware.require_auth_browser,admin_tag.list);
     app.get("/admin/tag/:tid/delete/?",middleware.require_auth_browser,admin_tag.delete);
 	app.post("/admin/tag/create?",middleware.require_auth_browser,admin_tag.create);
+
+	app.get("/admin/option/list/?",middleware.require_auth_browser,admin_option.list);
+	app.get("/admin/option/:id/delete/?",middleware.require_auth_browser,admin_option.delete);
+	app.post("/admin/option/create/?",middleware.require_auth_browser,admin_option.create);
 	
 	return app;
 
