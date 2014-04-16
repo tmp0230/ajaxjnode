@@ -16,6 +16,7 @@
     "zombie":"*",
     "validator":"*",
     "nodemailer":"*",
-    "marked-prettyprint":"*"
+    "marked-prettyprint":"*",
+    "node-schedule":"*"
   }
 }

@@ -10,6 +10,9 @@ var admin_tag = require('./routes/admin_tag');
 var middleware = require('./middleware');		//中间件
 var mongoose = require("mongoose");
 var partials = require('express-partials');
+var myjob = require("./utils/job");
+
+
 
 //app.init(config)		//也可以用于测试能更好的引用别的配置文件,返回的是 已经配置好app对象
 var init = exports.init = function(config){
@@ -17,6 +20,9 @@ var init = exports.init = function(config){
 	//初始就连接数据库
 	var db_uri = config.default_db_uri;
 	mongoose.connect(db_uri);
+
+	myjob.job1();
+	myjob.job2();
 
 	var app = express();
 
