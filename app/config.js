@@ -1,5 +1,5 @@
 //MongoDB connection URL for the app
-exports.default_db_uri = "mongodb://localhost/test";
+exports.default_db_uri = "mongodb://ajaxj:273511@localhost/test";
 
 
 var config = {

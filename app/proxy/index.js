@@ -6,3 +6,4 @@ exports.Category = require("./category");
 exports.Topic = require("./topic");
 exports.Tag = require("./tag");
 exports.Option = require("./option");
+exports.Article = require("./article");

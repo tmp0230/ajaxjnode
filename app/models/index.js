@@ -19,6 +19,7 @@ require("./category");
 require("./cook");
 require("./tag");
 require("./option")
+require("./article")
 
 exports.Topic = mongoose.model("Topic");
 exports.User = mongoose.model("User");
@@ -26,3 +27,4 @@ exports.Category = mongoose.model("Category");
 exports.Cook = mongoose.model("Cook");
 exports.Tag = mongoose.model("Tag");
 exports.Option = mongoose.model("Option");
+exports.Article = mongoose.model("Article");

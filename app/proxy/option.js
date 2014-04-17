@@ -58,3 +58,6 @@ exports.newAndSave = function(name,cn,value,callback){
 };
 
 
+exports.update = function(query,data,callback){
+	OptionModel.update(query,data,false,callback);
+};

@@ -1,0 +1,31 @@
+<!-- 面包屑 -->
+<ul class="breadcrumb">
+    <li><a href="/admin/">管理</a><span class="divider">/</span></li>
+    <li><a href="/admin/cookcategories">Options</a><span class="divider">/</span></li>
+    <li class="active">编辑Option</li>
+</ul>
+
+<div class="table-responsive">
+    <form class="form-horizontal" role="form" method="post" action="/admin/option/edit">
+        <input type="hidden" id="id" name="id" value="<%- option.id %>">
+        <div class="form-group">
+            <label for="name" class="col-sm-1 control-label">Name:</label>
+            <div class="col-sm-11">
+                <input type="text" class="form-control" id="name" name="name" value="<%- option.name %>">
+            </div>
+           <label for="cn" class="col-sm-1 control-label">中文:</label>
+            <div class="col-sm-11">
+                <input type="text" class="form-control" id="cn" name="cn" value="<%- option.cn %>">
+            </div>
+            <label for="value" class="col-sm-1 control-label">Value:</label>
+            <div class="col-sm-11">
+                <input type="text" class="form-control" id="value" name="value" value="<%- option.value %>">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">新增</button>
+            </div>
+        </div>
+    </form>
+</div>

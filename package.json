@@ -17,6 +17,7 @@
     "validator":"*",
     "nodemailer":"*",
     "marked-prettyprint":"*",
-    "node-schedule":"*"
+    "node-schedule":"*",
+    "eventproxy":"*"
   }
 }
