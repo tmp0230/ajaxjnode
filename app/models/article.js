@@ -7,4 +7,4 @@ var ArticleSchema = new Schema({
 	url:{type:String},
 	created:{type:String}
 });
-mongoose.model("Article",ArticleSchema,"articles");
+mongoose.model("Article",ArticleSchema,"t_article");

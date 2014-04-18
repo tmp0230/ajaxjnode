@@ -10,6 +10,42 @@ exports.index = function(req,res,next){
     res.render('admin/index',{layout:'admin/layout'});
 };
 
+
+//管理员登录
+exports.login = function(req,res,next){
+    var loginname = req.body.name;
+    var pass = req.body.pass;
+
+    if (!loginname || !pass){
+        return res.render("admin/login",{layout:false,error:"信息不完整"});
+    }
+
+    UserProxy.getUserByLoginName(loginname,function(err,user){
+        if(err){
+            return next(err);
+        }
+        if(!user){
+             return res.render("admin/login",{layout:false,error:"管理员不存在"});
+        }
+        //TODO md5
+        if (pass !== user.pass){
+            return res.render("admin/login",{layout:false,error:"密码错误"});
+        }
+        //TODO 补充cookie 还有 refer 跳转
+        req.session.user = user;
+
+         res.redirect("/admin/");
+    });
+};
+
+//管理员退出
+exports.logout = function(req,res,next){
+    req.session.destroy();
+    //TODO 清理其它
+    return res.render("admin/login",{layout:false});
+};
+
+
 //初始化数据库
 exports.initdb = function(req,res,next){
     //user

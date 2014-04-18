@@ -5,9 +5,9 @@
 <tr>
 <th>#</th>
 <th>Title</th>
-<th>Content</th>
-<th>create_at</th>
-<th>update_at</th>
+<th>Category</th>
+<th>created</th>
+<th>updated</th>
 <th>操作</th>
 </tr>
 </thead>
@@ -16,9 +16,9 @@
 <tr>
 <td><%- cook.id %></td>
 <td><%- cook.title %></td>
-<td><%- cook.content %></td>
-<td><%- cook.create_at %></td>
-<td><%- cook.update_at %></td>
+<td><%- cook.category %></td>
+<td><%- cook.created %></td>
+<td><%- cook.updated %></td>
 <td>
 <a href="/admin/editcook?id=<%-cook.id%>">EDIT</a>|
 <a href="/admin/cook/<%-cook.id%>/delete">DEL</a>
@@ -27,6 +27,46 @@
 <% }) %>
 </tbody>
 </table>
+<ul class='pagination'>
+        <% 
+        var base = "http://localhost:3000/admin/cook/list";
+        var base_url = base + (base.indexOf('?') < 0 ? '?' : '&') + 'page=';
+         %>
+        <% if (current_page == 1) { %>
+            <li class='disabled'><a>«</a></li>
+        <% } else { %>
+            <li><a href="<%= base_url %>1">«</a></li>
+        <% } %>
+
+        <%
+            var page_start = current_page - 2 > 0 ? current_page - 2 : 1;
+            var page_end = page_start + 10 >= pages ? pages : page_start + 10;
+        %> 
+
+        <% if (page_start > 1) { %>
+            <li><a>...</a></li>
+        <% } %>
+
+        <% for(var i = page_start; i <= page_end; i++) { %>
+            <% if (i === current_page) { %>
+                <li class='disabled'><a><%= i %></a></li>
+            <% } else { %>
+                <li><a href='<%= base_url + i %>'><%= i %></a></li>
+            <% } %>
+        <% } %>
+
+        <% if (page_end < pages ) { %>
+            <li><a>...</a></li>
+        <% } %>
+
+        <% if (current_page == pages) { %>
+            <li class='disabled'><a>»</a></li>
+        <% } else { %>
+            <li><a href='<%= base_url + pages %>'>»</a></li>
+        <% } %>
+</ul>
+
+
 </div>
 
 <div class="table-responsive">

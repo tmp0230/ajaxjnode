@@ -20,6 +20,14 @@ exports.getAllCooks = function(callback){
 	CookModel.find({},null,options,callback);
 }
 
+exports.getCountByQuery = function(query,callback){
+	CookModel.count(query,callback);
+}
+
+exports.getCooksByQuery = function(query,opt,callback){
+	CookModel.find(query,null,opt,callback);
+};
+
 
 exports.newAndSave = function(title,content,callback){
    var cookEntity = new CookModel();

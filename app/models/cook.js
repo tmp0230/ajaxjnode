@@ -8,9 +8,14 @@ var ObjectId = Schema.ObjectId;
 
 var CookSchema = new Schema({
     title:{type:String},
+	img:{type:String},
+	url:{type:String},
     content:{type:String},
-    create_at:{type:Date,default:Date.now},
-    update_at:{type:Date,default:Date.now}
+    category:{type:String},
+    created:{type:String},
+    updated:{type:String}
+    // created:{type:Date,default:Date.now},
+    // updated:{type:Date,default:Date.now}
 });
 
 mongoose.model("Cook",CookSchema,"t_cook");

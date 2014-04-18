@@ -24,6 +24,9 @@ exports.list = function(req,res,next){
 	var options = {skip:(_page -1) * _limit,limit:_limit, sort: {created: 1}};
 
 		ArticleProxy.getCountByQuery(query,function(err,article_count){
+			if(err){
+				return next(err);
+			}
 			var _pages = Math.ceil(article_count / _limit);
 			
 			proxy.emit("pages",_pages);			//这里把得到的总页数变量传给eventproxy

@@ -5,10 +5,6 @@ var ep = EventProxy.create('tpl', 'data', function (tpl, data) {
 });
 
 
-function a(test){
-	ep.emit('tpl',test);
-}
 
-a("1");
 
 
